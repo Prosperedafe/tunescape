@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter';
+}
+
+img {
+    max-width: 100%;
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+//colors
+$baseRed: hsl(357, 83%, 61%);
+$fairBg: hsl(0, 0%, 15%);
+$darkBg: hsla(0, 0%, 9%, 1);
+$neutral-900: hsl(160, 6%, 90%);
+$neutral-800: hsl(154, 5%, 70%);
+$neutral-300: hsl(154, 5%, 30%);
+$neutral-1000: hsl(0, 0%, 100%);
+//
+
+//font sizes
+$baseFont: 1rem;
+
+//font weights
+$font-weights: (
+    "thin": 300,
+    "normal": 400,
+    "big": 500,
+    "semibold": 600,
+    "bold": 700,
+    "heavy": 800
+);
+
+@mixin flex {
+    display: flex;
+}
+
+@mixin align-center {
+    display: flex;
+    align-items: center;
+}

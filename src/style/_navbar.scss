@@ -1,0 +1,51 @@
+header {
+    & .primary-nav {
+        display: flex;
+        flex-direction: column;
+        background: $fairBg;
+        padding: $baseFont;
+        height: fit-content;
+        min-height: 100vh;
+
+        &__logo {
+            @include align-center;
+            color: $neutral-1000;
+            font-size: 1.3rem;
+            font-weight: map-get($font-weights, bold);
+
+            img {
+                height: 2rem;
+            }
+        }
+
+        &__ul {
+            margin: calc($baseFont * 3) 0;
+
+            &__links {
+                color: $neutral-1000;
+                font-size: calc($baseFont + .2rem);
+                font-weight: map-get($font-weights, big);
+                display: block;
+                margin-bottom: 1.2rem;
+                @include align-center;
+                gap: 10px;
+                padding: .8rem;
+                border-radius: 4px;
+                max-width: 250px;
+
+                img {
+                    height: 20px;
+                    width: 20px;
+                }
+            }
+
+            .active {
+                background: $baseRed;
+            }
+
+        }
+
+
+    }
+
+}
